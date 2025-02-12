@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +20,16 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .control-label {
+    @apply block text-sm font-normal md:w-[230px] md:pt-2;
+  }
+  .control-container {
+    @apply flex flex-col gap-4 mb-6 md:flex-row;
+  }
+  .form-h2 {
+    @apply mb-6 font-semibold text-lg md:text-2xl;
+  }
 }
